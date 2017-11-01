@@ -1,49 +1,437 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Coming Soon</title>
-<link href="tools/style.css" rel="stylesheet" type="text/css" media="screen" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<script type="text/javascript" src="tools/jquery.min.js"></script> 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script> 
-<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto+Slab:700' rel='stylesheet' type='text/css'>
-<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Edge Spatial | Location Intelligence at your Fingertips.</title>
+    <meta name="description" content="India's first curated platform for developers.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
 
 
+    <!--CSS files need to be included here-->
+    <link type="text/css" rel="stylesheet" href="css/styles.min.css">
+    <link type="text/css" rel="stylesheet" href="css/landing.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <!--///////////////  CSS files end   ///////////////////-->
+
+
+    <!--JS files which need to be loaded before page load-->
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/semantic-ui.js"></script>
+    <!--End of JS files-->
+
+
+    <!--Social sharing-->
+    <!--  Essential META Tags -->
+
+    <meta property="og:title" content="Edge Spatial">
+    <meta property="og:description" content="Kenya's first Location Intelligence Service Provider">
+    <meta property="og:image" content="img/meta2x.png">
+    <meta property="og:url" content="http://edgespatial.com">
+    <!--<meta name="twitter:card" content="summary_large_image">-->
+
+
+    <!--Social sharing ends-->
 </head>
-<body>
-<div class="wrapper">
-	<div class="left-section"><img src="images/watch.png" /></div>
-	<div class="right-section">
-		<h1 id="logo">Edge Spatial</h1>
-		<div class="seprator"></div>
-		<div class="main-content">
-			<h2>Our site is coming soon</h2>
-			<p>In the mean time connect with us with the information provided</p>
-		</div>
-		<ul class="social">
-			<li id="facebook"><a href="https://www.facebook.com/edgespatialKenya/"><i class="fa fa-facebook"></i></a></li>
-			<li id="twitter"><a href="https://www.twitter.com/edgespatial"><i class="fa fa-twitter"></i></a></li>
-		</ul>
-		<ul class="info">
-			<li><i class="fa fa-phone-square"></i>+254700494484</li>
-			<li><i class="fa fa-map-marker"></i>Nairobi Kenya</li>
-			<li><i class="fa fa-envelope"></i><a href="#">info@edgespatial.com</a></li>
-		</ul>
 
-		<div class="social-links">
-			<ul class="social2">
-				<li id="facebook"><a href="https://www.facebook.com/edgespatialKenya/"><i class="fa fa-facebook"></i></a></li>
-				<li id="twitter"><a href="https://www.twitter.com/edgespatial"><i class="fa fa-twitter"></i></a></li>
-			</ul>
-		</div>
-		
-		
-	</div>
-	<div class="watch-section"><img src="images/watch.png" /></div>
-</div>
+
+<body>
+
+    <header class="desktop">
+
+        <div class="ui top menu landing">
+
+            <div class="ui grid container">
+                <a class="item logo" onclick="location.href='/'">
+                    <img src="img/logo.svg" class="logo" alt="edge spatial">
+                </a>
+
+                <a class="right item" href="/products">
+                    Products
+                </a>
+
+                <a class="item" href="/services">
+                    Services
+                </a>
+
+                <a class="item" href="/about">
+                    About
+                </a>
+
+                <a class="item" href="/contact">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <header class="mobile">
+        <div class="ui top menu landing">
+
+
+            <div class="ui grid container">
+                <a class="item logo" onclick="location.href='/'">
+                    <img src="img/logo_mobile.svg" class="logo" alt="edge spatial">
+                </a>
+
+
+            </div>
+        </div>
+    </header>
+
+
+    <header class="desktop onscroll">
+
+        <div class="ui top fixed menu landing" ng-controller="headerCtrl" ng-init="init_header()">
+            <div class="ui grid container">
+                <a class="item logo" href="index.html">
+                    <img src="img/logo.svg" class="logo" alt="edge spatial">
+                </a>
+
+                <a class="right item" href="/products">
+                    Products
+                </a>
+
+                <a class="item" href="/services">
+                    Services
+                </a>
+
+                <a class="item" href="/about">
+                    About
+                </a>
+
+                <a class="item" href="/contact">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="user-landing">
+        <!-- user landing start -->
+
+        <!-- Intro Section -->
+        <section class="intro" id="intro">
+            <div class="ui container center aligned">
+
+                <h1>Location Intelligence at your fingertips</h1>
+                <p>Discover with us what geospatial data, visualization and analytics can do for you ...</p>
+
+                <div style="clear:both"></div>
+                <a href="index.html#howitworks" class="scroll-down">
+                    <img src="img/down_arrow.svg">
+                </a>
+
+                <div class="code">
+
+                    <div class="code-ui-wrapper" style="overflow: hidden;">
+                        <img src="img/analytics.svg" class="code-ui">
+                    </div>
+
+                    <img src="img/layers.svg" class="cv">
+                    <img src="img/route.svg" class="specs">
+                </div>
+
+            </div>
+
+
+            <img src="img/iot.svg" class="iot">
+            <img src="img/chip.svg" class="chip">
+
+
+        </section>
+        <!-- Intro Section -->
+
+
+        <!-- Clients Section -->
+        <section class="clients" style="display: none">
+            <div class="ui container middle aligned center aligned">
+
+
+                <div class="clients-slider">
+                    <div>
+                        <img src="img/clients/client.png">
+                    </div>
+                    <div>
+                        <img src="img/clients/client.png">
+                    </div>
+
+                    <!--<div><img src="img/clients/swiggy.png"></div>-->
+
+                    <div>
+                        <img src="img/clients/client.png">
+                    </div>
+
+
+                    <div>
+                        <img src="img/clients/client.png">
+                    </div>
+                    <div>
+                        <img src="img/clients/client.png">
+                    </div>
+                    <div>
+                        <img src="img/clients/client.png">
+                    </div>
+
+
+                    <div>
+                        <img src="img/clients/client.png">
+                    </div>
+
+                    <div>
+                        <img src="img/clients/client.png">
+                    </div>
+                    <div>
+                        <img src="img/clients/client.png">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+        <!-- Clients Section -->
+
+        <!-- how it works Section -->
+        <section class="howitworks" id="howitworks">
+
+
+            <div class="ui container center aligned">
+                <h1>What we do</h1>
+
+            </div>
+
+
+            <div class="ui container center aligned">
+
+                <div class="ui steps">
+                    <a class="active step how_it_works" data-content="register">
+
+                        <div class="content">
+                            <div class="title">Identify</div>
+                        </div>
+                    </a>
+                    <a class="step how_it_works" data-content="participate">
+                        <div class="content">
+                            <div class="title">Develop</div>
+                        </div>
+                    </a>
+
+                    <a class="step how_it_works" data-content="get_hired">
+                        <div class="content">
+                            <div class="title">Implement</div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div class="ui container center aligned content_holder">
+                <div class="how_it_works_content register">
+
+                    <h2 class="tablet-only">Identify</h2>
+                    <p class="description"> You indentify a problem that needs location attention
+                    </p>
+
+                    <div class="ui-image">
+                        <img src="img/map_ui.svg" class="register-ui">
+                        <img src="img/mouse.svg" class="mouse register">
+                        <img src="img/guy_identify.svg" class="guy-register">
+
+
+                    </div>
+                </div>
+
+
+                <div class="how_it_works_content participate">
+
+                    <h2 class="tablet-only">Develop</h2>
+                    <p class="description">
+                        We engage your team and our team to prototype a solution
+                    </p>
+
+                    <div class="ui-image">
+                        <img src="img/code_ui.svg" class="code-ui-sec">
+                        <img src="img/mouse.svg" class="mouse code">
+                        <img src="img/guy_code.svg" class="guy-code">
+
+                    </div>
+                </div>
+
+
+                <div class="how_it_works_content get_hired">
+
+                    <h2 class="tablet-only">Deploy</h2>
+
+                    <p class="description"> We give back a fully working and tested GIS Solution
+                    </p>
+
+                    <div class="ui-image">
+
+                        <img src="img/guy_hired_bg.svg" class="guy-hired-bg">
+                        <img src="img/meeting.svg" class="guy-hired floating">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+        <!-- how it works Section -->
+
+
+        <!-- Testimonal Section start -->
+        <div id="testimonial"></div>
+        <!-- Testimonial Section end-->
+
+
+        <!-- Sign up Section start -->
+        <section class="get-started">
+
+
+            <div class="ui container grid center aligned">
+                <div class="row">
+
+                    <p> Ok.. Give me details</p>
+
+                </div>
+                <button class="ui primary large blue button" onclick="location.href='/user/#/signup'">Our Services
+                </button>
+            </div>
+
+        </section>
+        <!-- Sign up Section end-->
+
+
+        <!-- Footer Section start -->
+        <div id="footer"></div>
+        <!-- Footer Section end-->
+
+    </div>
+    <!-- user landing end -->
+
+
+    <script type="text/javascript">
+        $("#footer").load("partials/_inc/_footer.html")
+            // $("#testimonial").load("partials/_inc/_testimonial.html")
+    </script>
+
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $(window).on('resize', function() {
+                set_content();
+            });
+            $('.how_it_works').on('click', how_it_works);
+            set_content();
+            how_it_works();
+            $('.how_it_works')[0].click();
+        });
+
+        var how_it_works = function() {
+
+            $(".content_holder").children().hide();
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+            var required_div = "." + $(this).attr('data-content');
+            $(required_div).show();
+
+        };
+
+        var set_content = function() {
+
+            if ($(window).width() < 760) {
+                $(".content_holder").children().show();
+                $('.content_holder').removeClass('content_holder');
+            } else {
+                $($('.how_it_works_content')[0]).parent().addClass('content_holder');
+                $('.how_it_works')[0].click();
+            }
+            //        how_it_works();
+        }
+    </script>
+
+
+    <script>
+        var show = true;
+        $(document).scroll(function() {
+            var y = $(this).scrollTop();
+            if (y > 100) {
+                if (show) {
+                    $('.onscroll .ui.menu.landing').css({
+                        "top": "0px",
+                        "visibility": "visible"
+                    });
+                }
+            } else {
+                $('.onscroll .ui.menu.landing').css("top", "-72px");
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.clients').css('display', 'block');
+
+            $('.clients-slider').slick({
+                autoplay: true,
+                slidesToShow: 6,
+                slidesToScroll: 2,
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true
+
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2,
+                        arrows: false
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                }]
+
+            });
+
+
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(function() {
+            $('#intro a').bind('click', function(event) {
+                var $anchor = $(this);
+
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top - 40
+                }, 1000, 'easeInOutCubic');
+                event.preventDefault();
+            });
+        });
+    </script>
 
 
 </body>
+
 </html>
