@@ -403,7 +403,7 @@ p {
 
 .wellcome_area {
     /*background-image: url(img/2.jpg);*/
-    background-image: url(img/2_blue.jpg);
+    background-image: url(img/2.jpg);
     height: 700px;
     position: relative;
     z-index: 1;
