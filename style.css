@@ -582,13 +582,11 @@ p {
 
 .partner {
     overflow: hidden;
-    margin-bottom: 25px;
-    min-height: 100px;
+    margin-bottom: 10px;
     padding: 10px;
     -webkit-transition-duration: 800ms;
     -o-transition-duration: 800ms;
     transition-duration: 800ms;
-    margin-bottom: 30px;
 }
 
 
@@ -1029,4 +1027,28 @@ p {
 
 .copyright-text > p {
     margin-bottom: 0;
+}
+
+.floating {
+    -webkit-animation-name: Floatingx; 
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-timing-function: ease-in-out; 
+    -moz-animation-name: Floating; 
+    -moz-animation-duration: 3s; 
+    -moz-animation-iteration-count: infinite; 
+    -moz-animation-timing-function: ease-in-out; 
+    margin-left: 30px; 
+    margin-top: 5px;
+    position: absolute; 
+    top: 10%; 
+    left: 15%;
+}
+
+@-webkit-keyframes Floatingx {
+    from { -webkit-transform: translate(0, 0) } 65% { -webkit-transform: translate(0, 15px) } to { -webkit-transform: translate(0, 0) }
+}
+
+@-moz-keyframes Floating {
+    from { -moz-transform: translate(0, 0) } 65% { -moz-transform: translate(0, 15px) } to { -moz-transform: translate(0, 0) }
 }

@@ -9,7 +9,6 @@
     // :: 4.0 ScrollUp Active Code
     // :: 5.0 CounterUp Active Code
     // :: 6.0 onePageNav Active Code
-    // :: 7.0 Magnific-popup Video Active Code
     // :: 8.0 Sticky Active Code
     // :: 9.0 Preloader Active code
 
