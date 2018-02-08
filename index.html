@@ -52,7 +52,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-md">
                     <div class="wellcome-heading ml-2">
-                        <h2>We offer &nbsp;</h2>
+                        <h2>We offer&nbsp;</h2>
                         <h2 class="textillate">
                             <ul class="texts">
                                 <li data-in-effect="fadeInUp" data-out-effect="fadeOutUp">internet and web mapping solutions.</li>
@@ -192,10 +192,10 @@
                             <img src="img/kitty_g.png" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://www.facebook.com/charity.mbaka.3"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://twitter.com/charity_mbaka"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://github.com/charitymbaka"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://charitymbaka.github.io"> <i class="fa fa-link" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -211,10 +211,10 @@
                             <img src="img/oty_g.png" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://www.facebook.com/erick.okongo.7"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://twitter.com/erick_otenyo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://github.com/erick-otenyo"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/erick_otenyo"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -230,10 +230,11 @@
                             <img class="img-fluid" src="img/git_g.png" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://www.facebook.com/moses.muigai.146"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://www.twitter.com/gitaumoses4"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://github.com/gitaumoses4"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/gitaumoses4"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="http://www.mosesgitau.com"><i class="fa fa-link" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -249,10 +250,10 @@
                             <img src="img/ed_g.png" alt="">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://twitter.com/codingedward"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://github.com/codingedward"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://codingedward.github.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -349,8 +350,13 @@
             });
             */
             $('.navbar-nav>li>a').on('click', function(){
-                    $('.navbar-collapse').collapse('hide');
-
+                $('.navbar-collapse').collapse('hide');
+            });
+            $('.navbar-collapse').on('focusout', function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+            $('.navbar-collapse').on('blur', function () {
+                $('.navbar-collapse').collapse('hide');
             });
         });
 
